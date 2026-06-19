@@ -1,47 +1,38 @@
-# 宿递 (Sudi) - 校园快递代取平台
+# 宿递 (Sudi) — 校园快递代取
 
-📦 校园最后一公里快递代取解决方案
+📦 校园最后一公里快递代取平台 · React 前端模板
 
 ---
-
-## 项目结构
-
-```
-sudi/
-├── backend/        # NestJS + PostgreSQL 后端 API
-├── frontend/       # React + TypeScript Web 端
-├── admin/          # 管理后台
-├── weapp/          # 微信小程序
-├── docs/           # 项目文档
-├── scripts/        # 工具脚本
-└── .github/        # CI/CD 配置
-```
 
 ## 快速开始
 
 ```bash
-# 后端
-cd backend && npm install && npm run start:dev
-
-# 前端
-cd frontend && npm install && npm run dev
+cd frontend
+npm install
+npm run dev
 ```
+
+浏览器打开 http://localhost:5173
 
 ## 技术栈
 
-- **后端：** NestJS + Prisma + PostgreSQL + Redis
-- **前端：** React 18 + TypeScript + Vite + Tailwind CSS
-- **移动端：** 微信小程序
-- **部署：** Docker + GitHub Actions
+- **React 18** + **TypeScript**
+- **Vite** 构建
+- **Tailwind CSS** 样式
+- **React Router** 页面路由
 
-## 核心功能
+## 页面模板
 
-- 📮 发布快递代取订单
-- 🏃 跑腿员接单配送
-- 💰 在线支付 + 余额系统
-- 📍 实时物流追踪
-- ⭐ 评价系统
+| 页面 | 路由 | 功能 |
+|------|------|------|
+| 🏠 首页 | `/` | 附近待接单列表 |
+| 📮 发布 | `/publish` | 发布代取订单 |
+| 📋 订单 | `/orders` | 我的订单列表 |
+| 👤 我的 | `/profile` | 个人中心 |
+| 🔑 登录 | `/login` | 验证码登录 |
+
+> 演示模式，使用模拟数据，无需后端即可运行
 
 ---
 
-Built by HX-04 | 2026
+Built by [HX-04](https://github.com/HX-04) | 2026
